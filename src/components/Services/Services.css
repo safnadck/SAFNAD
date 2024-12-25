@@ -1,0 +1,136 @@
+
+.services {
+  background: #eefbf6;
+  border-radius: 4px;
+}
+
+.head2 {
+  padding-top: 50px;
+  font-size: 80px;
+  text-align: center;
+  color: rgb(2, 84, 93);
+  padding-bottom: 60px;
+}
+
+.cards {
+  margin-left: 11%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+article {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+article .front,
+article .back {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  backface-visibility: hidden;
+  backdrop-filter: blur(10px);
+  background: #c3e1d6;
+  box-shadow: rgba(149, 157, 165, 0.05) 20px 8px 14px;
+  border-radius: 20px;
+  padding: 32px;
+  transition: transform 0.6s;
+  cursor: pointer;
+}
+
+article .back {
+  transform: rotateY(180deg);
+}
+
+article:hover .front {
+  transform: rotateY(-180deg);
+}
+
+article:hover .back {
+  transform: rotateY(0);
+}
+
+.back p {
+  font-size: 22px;
+  color: #0a0a0c;
+  background: none;
+}
+
+article .material-symbols-outlined {
+  background: none;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 70px;
+}
+
+
+.services {
+  margin-bottom: 100px;
+}
+
+.hide {
+  position: absolute;
+  scale: 0;
+}
+
+
+input:checked ~ article .back {
+  transform: rotateY(0);
+}
+
+input:checked ~ article .front {
+  transform: rotateY(-180deg);
+}
+
+article var {
+  margin-top: -15%;
+  background: none;
+  font-style: normal;
+  font-size: 30px;
+}
+
+
+@media (max-width: 1200px) {
+  .cards {
+    margin-left: 5%;
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .head2 {
+    font-size: 60px; 
+  }
+  .cards {
+    margin-left: 20%;
+    grid-template-columns: 1fr; 
+  }
+  article {
+    height: 250px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .head2 {
+    font-size: 40px; 
+  }
+  .cards {
+    margin-left: 8%;
+    grid-template-columns: 1fr;
+  }
+  article {
+    height: 220px;
+  }
+}

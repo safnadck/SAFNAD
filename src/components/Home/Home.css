@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+
+.home-page {
+  background-color: #eefbf6;
+  border-radius: 10px;
+}
+
+.content {
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 40px;
+  padding-bottom: 100px;
+}
+
+.porfolio {
+  width: 500px;
+  height: 450px;
+}
+
+.right-side {
+  margin-left: 25%;
+  margin-top: -25%;
+  flex: 2;
+}
+
+.name {
+  text-align: center;
+}
+
+.name span {
+  font-size: 3rem;
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: rgb(3, 75, 83);
+}
+
+.title {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 2rem;
+  color: #073d6a;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.description {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 1.2rem;
+  color: #130458;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+.download-button {
+  position: relative;
+  margin-left: 40%;
+
+  border-width: 0;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 1;
+  padding: 8px 20px;
+}
+
+.download-button .docs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: 4px;
+  z-index: 1;
+  background-color: #0c0536;
+  border: solid 1px #e8e8e82d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 4px;
+  transform: translateY(0%);
+  background-color: #8b908c;
+  border: solid 1px #01e0572d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover .download {
+  transform: translateY(100%);
+}
+
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-side {
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .porfolio {
+    width: 400px;
+    height: 350px;
+  }
+
+  .name span {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .download-button {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .porfolio {
+    margin-left: 20%;
+    width: 450px;
+    height: 350px;
+  }
+
+  .name span {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .download-button {
+    font-size: 16px;
+  }
+
+  .download-button .docs {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 10px;
+  }
+
+  .porfolio {
+    margin-left: 10%;
+    width: 250px;
+    height: 200px;
+  }
+
+  .name span {
+    font-size: 1.8rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .download-button {
+    font-size: 14px;
+    padding: 6px 16px;
+  }
+}

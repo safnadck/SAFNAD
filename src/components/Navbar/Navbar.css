@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+.navbar {
+  background: #d7f4e7;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 5;
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 25px;
+  margin-left: 10%;
+  color: #250449;
+  transition: 0.8s;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.logo span {
+  font-size: 3.8rem;
+  background: linear-gradient(to bottom, #29ab87, rgb(59, 114, 111));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.anchor-link {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links li a {
+  margin-left: -80%;
+  font-family: "Dosis", sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #1b0851;
+}
+
+.nav-links li a:hover {
+  text-decoration: overline;
+  color: #29ab87;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-right: 12%;
+}
+
+.social-icons a {
+  font-size: 1.99rem;
+  color: #1b0851;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.5);
+}
+
+.fa-linkedin:hover {
+  color: #007bff;
+}
+
+.fa-whatsapp:hover {
+  color: green;
+}
+
+.fa-github:hover {
+  color: black;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 38px;
+  right: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hamburger i {
+  font-size: 2.3rem;
+  color: #1b0851;
+  display: none;
+}
+
+.hamburger i.fa-bars-staggered {
+  display: block;
+  color: #29ab87;
+}
+
+.nav-links.active + .hamburger i.fa-bars-staggered {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 160px;
+    background-color: #d7f4e7;
+  }
+
+  li {
+    margin-left: 60%;
+  }
+
+  .social-icons {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 50px;
+  }
+}
