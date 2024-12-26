@@ -44,6 +44,7 @@
 }
 
 .description {
+  margin-left: 5%;
   text-align: center;
   margin-top: 2%;
   font-size: 1.2rem;
@@ -149,6 +150,7 @@
   }
 
   .porfolio {
+    
     margin-left: 20%;
     width: 450px;
     height: 350px;
@@ -175,12 +177,13 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
   .content {
     padding: 10px;
   }
 
   .porfolio {
+    margin-top: 40%;
     margin-left: 10%;
     width: 250px;
     height: 200px;

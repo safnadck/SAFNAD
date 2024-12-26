@@ -85,14 +85,14 @@ const Contact = () => {
         <p>Kerala, India</p>
         <div className="social-icons">
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/muhammed-safnad-ck-697317341/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fa-brands fa-linkedin"></i>
           </a>
           <a
-            href="https://www.github.com"
+            href="https://github.com/safnadck"
             target="_blank"
             rel="noopener noreferrer"
           >

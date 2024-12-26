@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .navbar {
   background: #d7f4e7;
   margin-top: 0;
@@ -111,7 +116,47 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 160px;
+    background-color: #d7f4e7;
+  }
+
+ 
+
+  li {
+    margin-left: 60%;
+  }
+
+  .social-icons {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 50px;
+  }
+
+  .navbar {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1063px) {
   .nav-links {
     display: none;
     flex-direction: column;
@@ -142,5 +187,12 @@
     display: block;
     position: absolute;
     top: 50px;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 98%;
+    
   }
 }

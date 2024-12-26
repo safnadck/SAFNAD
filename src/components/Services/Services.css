@@ -127,10 +127,21 @@ article var {
     font-size: 40px; 
   }
   .cards {
-    margin-left: 8%;
+    margin-left: 3%;
     grid-template-columns: 1fr;
   }
   article {
     height: 220px;
   }
+  .services {
+    margin-bottom: 0%;
+  }
 }
+
+@media (max-width: 350px) {
+  .cards {
+    margin-left: 2%;
+    grid-template-columns: 1fr;
+  }
+}
+

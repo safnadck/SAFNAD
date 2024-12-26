@@ -1,15 +1,16 @@
 .yellow {
   background-color: #d7f4e7;
-  margin-top: 0;
+  margin-top: -7%;
   margin-bottom: 40px;
   padding-bottom: 40px;
+  overflow: hidden; /* Prevent overflow */
 }
 
 .class3 {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
-  gap: 100px;
+  justify-content: space-evenly;  /* Ensures cards are spaced evenly with no extra space */
+  gap: 20px;  /* Optional gap between the cards */
   color: #fdfcfd;
   flex-wrap: wrap;
   width: 100%;
@@ -63,15 +64,44 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 30vw;
+  width: calc(50% - 20px);  /* Ensure two cards fit in the row, with a gap of 20px */
   padding: 30px 30px 20px 20px;
   border-radius: 24px;
   box-shadow: 0 80px 60px rgb(0 0 0 / 12%);
   background-color: #fff;
   transition: box-shadow 0.2s ease-in-out;
   margin-bottom: 30px;
-  animation: slideIn 5s infinite ease-out forwards;
+  animation: slideIn 10s infinite ease-out forwards;
   opacity: 0;
+}
+
+.cardd {
+  animation: slideout 10s infinite;
+}
+
+@keyframes slideout {
+  0% {
+    transform: translateX(8%);
+    opacity: 1;
+  }
+
+  25% {
+    transform: translateX(30%);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translateX(30%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(8%);
+    opacity: 1;
+  }
 }
 
 .card-2:nth-child(odd) {
@@ -143,7 +173,8 @@
   .card-2 {
     margin-right: 5%;
     flex-direction: column;
-    width: 80%;
+    width: 90%; /* Adjust width to fit better */
+    margin-left: 5%; /* Center the card */
   }
 
   .card-2 img {
@@ -186,12 +217,13 @@
 
   .card-2 {
     margin-right: 10%;
-    width: 70%;
+    width: 90%; /* Ensure the cards fit on smaller screens */
+    margin-left: 5%; /* Center the card */
   }
 
   .card-2 img {
     box-shadow: 0 0 0 rgb(0 0 0 / 0);
-    height: 200px;
+    height: 100px;
   }
 
   .card-2 h2 {
