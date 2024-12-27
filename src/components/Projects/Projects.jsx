@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.css";
-import NourishNet from "../../assets/ecommerce.png";
+import NourishNet from "../../assets/nourishnet.jpg";
 import ecommerce from "../../assets/ecommerce.png";
 import gym from "../../assets/gym.png";
 import crud from "../../assets/crud.png";
