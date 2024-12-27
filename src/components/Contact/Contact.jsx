@@ -80,7 +80,7 @@ const Contact = () => {
       <div className="contact-info">
         <p><strong>Contact</strong></p>
         <p>muhammedsafnadck5@gmail.com</p>
-        <p>+91 808 654 7891</p>
+        <p>+91 7306 538 130</p>
         <p><strong>Based in</strong></p>
         <p>Kerala, India</p>
         <div className="social-icons">

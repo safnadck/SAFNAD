@@ -1,6 +1,9 @@
 import React from "react";
 import "./Projects.css";
-import safnad from "../../assets/safnad.jpg";
+import NourishNet from "../../assets/ecommerce.png";
+import ecommerce from "../../assets/ecommerce.png";
+import gym from "../../assets/gym.png";
+import crud from "../../assets/crud.png";
 
 const Projects = () => {
   return (
@@ -10,7 +13,7 @@ const Projects = () => {
       <div className="class3">
         <div className="section">
           <div className="card-2">
-            <img src={safnad} alt="" />
+            <img src={NourishNet} alt=""  />
             <div>
               <h2>NourishNet</h2>
               <p>
@@ -25,7 +28,7 @@ const Projects = () => {
           </div>
           <div className="cardd">
             <div className="card-2">
-              <img src={safnad} alt="" />
+              <img src={gym} alt="" />
               <div>
                 <h2>Gym Application</h2>
                 <p>
@@ -43,7 +46,7 @@ const Projects = () => {
         <div className="section2">
           <div className="section">
             <div className="card-2">
-              <img src={safnad} alt="" />
+              <img src={ecommerce} alt="" />
               <div>
                 <h2>E-COMMERCE</h2>
                 <p>
@@ -57,7 +60,7 @@ const Projects = () => {
             </div>
             <div className="cardd">
               <div className="card-2">
-                <img src={safnad} alt="" />
+                <img src={crud} alt="" />
                 <div>
                   <h2>CRUD Application</h2>
                   <p>
