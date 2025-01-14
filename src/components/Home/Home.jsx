@@ -5,7 +5,7 @@ import portfolio from "../../assets/portfolio2.jpeg";
 const HomePage = () => {
   const handleDownloadCV = () => {
     window.location.href =
-      "https://drive.google.com/file/d/1lH3ySmBQJcijwOIletNpt69mge9L3_zs/view?usp=drive_link";
+      "https://drive.google.com/file/d/1vA9o3zDvC5ZqfXXTbcomyd0Heii5wufe/view?usp=sharing";
   };
 
   return (
